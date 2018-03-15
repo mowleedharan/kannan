@@ -1,18 +1,26 @@
 #include<stdio.h>
+#include<conio.h>
 void main()
 {
-int n,a,b,i,count;
-printf("enter the two limits");
-scanf("%d%d",&a,&b);
-for(i=a;i<b;i++)
+int a,b,flag;
+printf("enter the a and b:",a,b);
+while(a<b)
 {
-count=0;
-for(n=2;n<i;n++)
+int i,flag=0;
+for(i=2;i<=a/2;i++)
 {
-if(i%n==0)
-count++;
+if(a%i==0)
+{
+flag=1;
+break;
 }
-if(count==0)
-printf("%d\n",i);
 }
+if(flag==0)
+{
+printf("%d",&a);
+++a;
 }
+return 0;
+}
+
+

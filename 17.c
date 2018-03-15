@@ -2,27 +2,25 @@
 #include<conio.h>
 void main()
 {
- int n,count=0,rem,sum=0,temp1,temp2;
- scanf("%d",&n);
- temp1=temp2=n;
- while(temp1>0)
- {
-   
-     count++;
-     temp1/=10;
- }
- while(temp2>0)
- {
-     rem=temp2%10;
-     sum=sum+pow(rem,count);
-     temp2/=10;
- }
- if(sum==n)
- {
-     printf("Armstrong");
- }
- else
- {
-     printf("Not Armstrong");
- }
+int arn,n=0,n1,rem,result=0;
+scanf("%d",&n1);
+arn=n1;
+while(arn!=0)
+{
+	arn=arn/10;
+	n++;
+}
+arn=n1;
+while(arn!=0)
+{
+	rem=arn%10;
+	result=result+pow(rem,n);
+	arn=arn/10;
+}
+if(result==n1)
+printf("\nArmstrong number");
+else
+printf("not an armstrong number");
+
+return 0;
 }

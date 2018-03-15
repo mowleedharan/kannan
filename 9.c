@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
-int main()
+void main()
 {
 int a[10],i,c,b,sum=0;
 printf("enter the limit of natural numbers");

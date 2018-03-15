@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include<conio.h>
 void main()
 {
 int n=0,num,sum=0,rem=0,count=0,n1;
